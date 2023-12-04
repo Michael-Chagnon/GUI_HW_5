@@ -14,11 +14,43 @@ Description: Scrabble
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
   </head>
   <body>
-    <h1>Scrabble Game :D</h1>
-    <form>
-    </form>
+    <h1>Scrabble Game</h1>
+    <div id="gameSpace">
+      <img id="board" src="board_oneline.jpg" alt="Scrabble Board">
+      <div id="boardSpot1"></div>
+    </div>
+    <div id="playerSpace">
+      <div id="buttons">
+        <button id="newPieces">New Pieces</button>
+        <button id="newGame">New Game</button>
+      </div>
+      <div id="pieceHolder">
+        <img id="pieceHolderIMG" src="scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder">
+        <div id="pieceImage">
+          <!-- <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece"> -->
+        </div>
+      </div>
+      <div id="pieces">
+        <div id="holderPiece1" class="snapPoint"></div>
+        <div id="holderPiece2" class="snapPoint"></div>
+        <div id="holderPiece3" class="snapPoint"></div>
+        <div id="holderPiece4" class="snapPoint"></div>
+        <div id="holderPiece5" class="snapPoint"></div>
+        <div id="holderPiece6" class="snapPoint"></div>
+        <div id="holderPiece7" class="snapPoint"></div>
+      </div>
+      <!-- <div id="pieceImage">
+        <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece">
+      </div> -->
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
