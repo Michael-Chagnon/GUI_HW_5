@@ -22,10 +22,6 @@ body{
     transform: translateX(-50%) translateY(-50%);
 }
 
-#boardSpot1{
-    width: 50px;
-    position: relative;
-}
 
 #buttons{
     margin-bottom: 10px;
@@ -53,7 +49,14 @@ h1{ /*Style for main page header*/
 
 
 #board{
-    width: 1200px;
+    width: 600px;
+}
+
+#boardSpots{
+    width: 600px;
+    margin-top: -200px;
+    position: relative;
+    display: inline-flex;
 }
 
 #playerSpace{
@@ -87,8 +90,8 @@ h1{ /*Style for main page header*/
 }
 
 .tile{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     position: relative;
     margin-left: 5px;
     border: black;
@@ -96,8 +99,8 @@ h1{ /*Style for main page header*/
 }
 
 .snapPoint{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border: #cc242c;
     border-style: solid;
     position: relative;
@@ -111,4 +114,19 @@ h1{ /*Style for main page header*/
     margin-top: 20px;
     margin-left: 5px;
     z-index: 1;
+}
+
+#boardPieceImage{
+    position: relative;
+    z-index: 1;
+}
+
+.boardPoint{
+    width: 75px;
+    height: 75px;
+    border: #2435cc;
+    border-style: solid;
+    position: relative;
+    margin-left: 7px;
+    z-index: 0;
 }

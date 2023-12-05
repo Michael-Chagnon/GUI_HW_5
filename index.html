@@ -24,8 +24,17 @@ Description: Scrabble
   <body>
     <h1>Scrabble Game</h1>
     <div id="gameSpace">
-      <img id="board" src="board_oneline.jpg" alt="Scrabble Board">
-      <div id="boardSpot1"></div>
+      <img id="board" src="a_board.jpg" alt="Scrabble Board">
+      <div id="boardSpots">
+        <div id="boardPieceImage"></div>
+        <div id="boardSpot1" class="boardPoint snapPoint"></div>
+        <div id="boardSpot2" class="boardPoint snapPoint"></div>
+        <div id="boardSpot3" class="boardPoint snapPoint"></div>
+        <div id="boardSpot4" class="boardPoint snapPoint"></div>
+        <div id="boardSpot5" class="boardPoint snapPoint"></div>
+        <div id="boardSpot6" class="boardPoint snapPoint"></div>
+        <div id="boardSpot7" class="boardPoint snapPoint"></div>
+      </div>
     </div>
     <div id="playerSpace">
       <div id="buttons">
@@ -33,10 +42,10 @@ Description: Scrabble
         <button id="newGame">New Game</button>
       </div>
       <div id="pieceHolder">
-        <img id="pieceHolderIMG" src="scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder">
         <div id="pieceImage">
-          <!-- <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece"> -->
-        </div>
+        <!-- <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece"> -->
+      </div>
+        <img id="pieceHolderIMG" src="scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder">
       </div>
       <div id="pieces">
         <div id="holderPiece1" class="snapPoint"></div>
