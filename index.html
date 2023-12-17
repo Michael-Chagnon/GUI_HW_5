@@ -5,12 +5,12 @@ Michael Chagnon, UMass Lowell Computer Science,
 michael_chagnon@student.uml.edu
 Copyright (c) 2021 by Michael. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
-Created by MC on November 7, 2023
-Description: Scrabble
+Created by MC on November 20, 2023
+Description: Scrabble game that allows for draggable pieces and keeps track of score.
 -->
 <!DOCTYPE html>
   <head>
-    <title>Dynamic Table</title>
+    <title>Scrabble Game</title>
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,6 @@ Description: Scrabble
     <div id="gameSpace">
       <div id="boardPieceHolder">
         <div id="boardPieceImage">
-        <!-- <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece"> -->
       </div>
         <img id="board" src="scrabboard.png" alt="Board">
       </div>
@@ -43,13 +42,11 @@ Description: Scrabble
 
     <div id="playerSpace">
       <div id="buttons">
-        <button id="newPieces">New Pieces</button>
         <button id="newGame">New Game</button>
         <button id="submit">Submit Pieces</button>
       </div>
       <div id="pieceHolder">
         <div id="pieceImage">
-        <!-- <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece"> -->
       </div>
         <img id="pieceHolderIMG" class="p" src="scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder">
       </div>
@@ -62,14 +59,12 @@ Description: Scrabble
         <div id="holderPiece6" class="snapPoint"></div>
         <div id="holderPiece7" class="snapPoint"></div>
       </div>
-      <!-- <div id="pieceImage">
-        <img id = "tile" class="tile" src="Scrabble_Tiles/Scrabble_Tile_A.jpg" alt="piece">
-      </div> -->
     </div>
 
     <div id="scoreSpace">
       <p id="totalScore">Total Score: </p>
       <p id="wordScore">Word Score: </p>
+      <p id="bagAlert"></p>
     </div>
     <script src="js/script.js"></script>
   </body>
